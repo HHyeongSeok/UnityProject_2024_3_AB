@@ -2,37 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace STORYGAME
-{
+
     public class Enums
     {
-        public enum StoryType
+        public enum StoryType       //스토리 타입
         {
             MAIN,
             SUB,
             SERIAL
         }
-        public enum EvenType
+
+        public enum EvenType        //이벤트 발생시 체크
         {
             NONE,
             GoToBattle = 100,
             CheckSTR = 1000,
-            CheckDEX,
-            CheckCON,
-            CheckINT,
-            CheckWIS,
-            CheckCHA
         }
 
-        public enum ResultType
+        public enum ResultType      //이벤트 결과 열거
         {
-            ChangeHp,
-            ChangeSp,
             AddExperience,
-            GoToShop,
             GoToNextStory,
             GoToRandomStory,
-            GoToEnding
         }
     }
 
@@ -57,4 +48,3 @@ namespace STORYGAME
         public int wisdom;          //WIS
         public int charisma;        //CHA
     }
-}
